@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razan's Professional Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>My Professional Portfolio</h1>
+    </header>
+    
+    <nav>
+        <a href="javascript:void(0)" id="about-me-link">About Me</a>
+        <a href="#skills">My Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+    </nav>
+ 
+    <div id="uni" class="uni">
+    <p>
+        Hello! I'm Razan Karaouni, a dedicated and ambitious computer science student.<br>
+        With a deep passion for technology and a relentless drive to succeed,<br>
+        I am determined to build a successful career as a developer.<br>
+        My goal is to leverage my skills and knowledge to make a significant impact in the tech industry.
+    </p>
+    <br>
+    <div id="classimage">
+        <div id="linkedin">
+        <img src="WhatsApp Image 2024-07-13 at 5.57.28 PM.jpeg" alt="Profile Picture of Razan Karaouni in professional attire"> 
+        <a href="https://www.linkedin.com/in/razan-karaouni-9a7164296" target="_blank">
+            <h5>Click here to view my profile</h5>
+        </a>
+        </div>
+    </div>
+    <div class="link">
+        <a id="skills-link" href="javascript:void(0)">Check my skills!</a>
+        <a id="certificates-link" href="javascript:void(0)">Check my certificates!</a>
+    </div>
+</div>
+
+        <br>
+        <div class="certificates-container">
+            <div class="certificate">
+                <p>Creative Thinking: Techniques and Tools for Success</p>
+                <img src="WhatsApp Image 2024-07-13 at 5.58.40 PM.jpeg" alt="Creative Thinking Certificate">
+            </div>
+            <div class="certificate">
+                <p>Cybersecurity Awareness</p>
+                <img src="cyber.jpeg" alt="Cybersecurity Awareness Certificate">
+            </div>
+        </div>
+        
+        <br>
+        <div id="skills" class="skills">
+            <h2>Technical Skills</h2>
+            <div class="row">
+                <div class="skill-item">
+                    <p>C++</p>
+                    <img src="C++.jpeg" alt="C++ Logo">
+                </div>
+                <div class="skill-item">
+                    <p>Microsoft SQL</p>
+                    <img src="sql.jpeg" alt="Microsoft SQL Logo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="skill-item">
+                    <p>HTML</p>
+                    <img src="html.png" alt="HTML Logo">
+                </div>
+                <div class="skill-item">
+                    <p>CSS</p>
+                    <img src="css.jpeg" alt="CSS Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="projects" class="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <a href="https://github.com/RazanKaraouni/Menu" target="_blank">📌 Restaurant Menu  </a>
+        <br>
+        <a href="https://github.com/RazanKaraouni/Calculator" target="_blank">📌 Calculator </a>
+        <br>
+        <a href="https://github.com/RazanKaraouni/Image-Gallery" target="_blank">📌 Image Gallery  </a>
+    </div>
+    
+    <footer>
+        <a href="https://www.linkedin.com/in/razan-karaouni-9a7164296" target="_blank">LinkedIn</a>
+        <a href="https://github.com/RazanKaraouni" target="_blank">GitHub</a>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('about-me-link').addEventListener('click', () => {
+                document.getElementById('uni').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('skills-link').addEventListener('click', () => {
+                document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('certificates-link').addEventListener('click', () => {
+                document.getElementById('certificates').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
